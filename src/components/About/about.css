@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.card {
+    background-color: #fff;
+    width: 26em;
+    background-origin: 10px;
+    padding: 25px;
+    margin: 25px;
+    transition: 0.5s ease;
+    box-shadow: 0 4px 8px rgba(75, 184, 140, 0.659);
+    border-bottom: 5px solid yellow;
+    border-left: 5px solid yellow;
+}
+ 
+.card:hover {
+    transform: scale(1.05); 
+}
+ 
+.info {
+     text-align: center;
+ }
+ 
+.info h3{
+    color: #cb11a9db;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 35px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    }
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: auto;
+}
+
+.info p{
+    color: rgba(0, 0, 0, 0.626);
+    font-size: 1.2em;
+    font-weight: 600;
+    position: relative;
+    margin-left: 1.3px;
+}
+
+.one {
+    width: 23rem;
+}
+
+#one {
+    height: 18rem;
+    width: 14rem;
+    position: relative;
+    margin-left: 5rem;
+}
+
+.two {
+    margin-left: 5px;
+    font-size: 1.2em;
+    color: beige;
+}
+
+.download-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .download-button:hover {
+    background-color: #d81b60;
+  }

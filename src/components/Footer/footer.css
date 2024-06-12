@@ -1,0 +1,33 @@
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.social-icons {
+    display: flex;
+    gap: 3rem; 
+}
+
+.social-icons a {
+    color: #00FFB2;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
