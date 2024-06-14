@@ -164,3 +164,9 @@
         z-index: 1;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .circle {
+        left: 6rem;
+    }
+}
