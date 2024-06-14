@@ -1,98 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-.card {
-    background-color: #fff;
-    width: 26em;
-    background-origin: 10px;
-    padding: 25px;
-    margin: 25px;
-    transition: 0.5s ease;
-    box-shadow: 0 4px 8px rgba(75, 184, 140, 0.659);
-    border-bottom: 5px solid yellow;
-    border-left: 5px solid yellow;
-}
- 
-.card:hover {
-    transform: scale(1.05); 
-}
- 
-.info {
-     text-align: center;
- }
- 
-.info h3{
-    color: #cb11a9db;
-    font-size: 1.4em;
-    font-weight: 700;
-    margin: 35px;
+.cards {
+    background-color: black;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-    }
+    font-size: 2.5em;
+    color: #f39c12;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 0.5rem auto;
+}
 
 .content {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    text-align: justify;
-    padding: auto;
+    justify-content: center;
+    gap: 30px;
 }
 
-.info p{
-    color: rgba(0, 0, 0, 0.626);
-    font-size: 1.2em;
-    font-weight: 600;
-    position: relative;
-    margin-left: 1.3px;
-}
-
-.one {
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     width: 23rem;
+    height: 32rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#one {
-    height: 18rem;
-    width: 14rem;
-    position: relative;
-    margin-left: 5rem;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.two {
-    margin-left: 5px;
-    font-size: 1.2em;
-    color: beige;
+.icon {
+    background-color: #f39c12;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-style {
+    font-size: 4rem;
+    color: white;
+}
+
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.5em;
+    color: #333333d1;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    padding: 10px;
 }
 
 .download-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
+    display: inline-block;
+    padding: 10px 20px;
     margin-top: 10px;
-    text-align: center;
-    background-color: #e91e63;
+    background-color: #f39c12;
     color: white;
-    border: none;
-    cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .download-button:hover {
-    background-color: #d81b60;
-  }
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

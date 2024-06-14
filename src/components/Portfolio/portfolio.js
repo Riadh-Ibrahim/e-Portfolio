@@ -13,7 +13,7 @@ const Portfolio = () => {
                 <div class="content">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src={entreprenetImg} />
+                            <img src={entreprenetImg} alt='' />
                         </div>
                         <div class="project-info">
                             <p class="project-category">A platform buit with MERN stack that allows investors to connect with entrepreneurs in a dynamic environment</p>
@@ -25,7 +25,7 @@ const Portfolio = () => {
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <img src={kyufiImg} />
+                            <img src={kyufiImg} alt=''/>
                         </div>
                         <div class="project-info">
                             <p class="project-category">An <b>e-commerce</b> web application designed for a <b>Coffee Shop</b>, facilitating customers to place orders seamlessly, built with HTML, CSS, JavaScript, PHP, and MySQL.</p>
@@ -37,7 +37,7 @@ const Portfolio = () => {
                     </div>
                     <div class="project-card">
                         <div class="project-image">
-                            <img src={todoImg} />
+                            <img src={todoImg} alt=''/>
                         </div>
                         <div class="project-info">
                             <p class="project-category">A <b>Todo List</b> page using HTML, CSS & JavaScript</p>
@@ -49,7 +49,7 @@ const Portfolio = () => {
                     </div>
                     <div class="project-card">
                     <div class="project-image">
-                        <img src={hiddenImg} />
+                        <img src={hiddenImg} alt=''/>
                     </div>
                         <div class="project-info">
                             <p class="project-category">A web page that simulates the game of <b>Hiddem Number</b> using HTML, CSS & JavaScript</p>

@@ -1,9 +1,5 @@
 import React, { useRef } from 'react';
 import './contact.css';
-import FacebookIcon from '../../assets/facebook-icon.jpg'
-import InstagramIcon from '../../assets/instagram.jpg'
-import LinkedinIcon from '../../assets/linkedin.png'
-import GithubIcon from '../../assets/github.jpg'
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {

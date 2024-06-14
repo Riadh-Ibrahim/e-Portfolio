@@ -10,10 +10,10 @@ const Navbar = () => {
         <nav className='navbar'>
             <img src={logo} alt="Logo" className='logo' />
             <div className="desktopMenu">
-                <Link to='intro' spy={true} smooth={true} duration={50} className="desktopMenuListItem">Home</Link>
-                <Link to='services' spy={true} smooth={true} duration={50} className="desktopMenuListItem">About</Link>
-                <Link to='skills' spy={true} smooth={true} duration={50} className="desktopMenuListItem">Skills</Link>
-                <Link to='projects' spy={true} smooth={true} duration={50} className="desktopMenuListItem">Portfolio</Link>
+                <Link to='intro' spy={true} smooth={true} duration={500} className="desktopMenuListItem">Home</Link>
+                <Link to='services' spy={true} smooth={true} duration={500} className="desktopMenuListItem">About</Link>
+                <Link to='skills' spy={true} smooth={true} duration={500} className="desktopMenuListItem">Skills</Link>
+                <Link to='projects' spy={true} smooth={true} duration={500} className="desktopMenuListItem">Portfolio</Link>
             </div>
             <button className="desktopMenuBtn" onClick={() => {
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });

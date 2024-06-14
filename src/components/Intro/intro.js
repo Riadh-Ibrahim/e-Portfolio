@@ -9,17 +9,16 @@ const Intro = () => {
     const [animationClass, setAnimationClass] = useState("");
 
     useEffect(() => {
-      const toggleName = setInterval(() => {
-          setAnimationClass("out"); 
-          setTimeout(() => {
-              setName((prevName) => (prevName === "Riadh" ? "Ibrahim" : "Riadh")); // Toggle between "Riadh" and "Ibrahim"
-              setAnimationClass("in");
-          }, 10);
-      }, 2500);
-  
-      return () => clearInterval(toggleName);
-    }, []);
+        const toggleName = setInterval(() => {
+            setAnimationClass("out");
+            setTimeout(() => {
+                setName((prevName) => (prevName === "Riadh" ? "Ibrahim" : "Riadh"));
+                setAnimationClass("in");
+            }, 10);
+        }, 2500);
 
+        return () => clearInterval(toggleName);
+    }, []);
 
     return (
         <section id="intro">
@@ -33,14 +32,16 @@ const Intro = () => {
                     I am a full-stack junior web developer with <br />
                     experience in building user-friendly web applications
                 </p>
-                <Link to = 'contact'>
+                <Link to='contact'>
                     <button className="btn">
                         <img src={btnImg} alt="Hire Me" className='btnImg' />
                         Let's work together!
                     </button>
                 </Link>
             </div>
-            <img src={bg} alt="Profile" className="bg" />
+            <div className="circle">
+                <img src={bg} alt="Profile" className="bg" />
+            </div>
         </section>
     );
 }

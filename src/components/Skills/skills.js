@@ -46,7 +46,6 @@ const Skills = () => {
                 {skillsData.map((category, index) => (
                     <div key={index} className="skills-category-box">
                         <h3>{category.category}</h3>
-                        <br/>
                         <ul>
                             {category.skills.map((skill, idx) => (
                                 <li key={idx} className="skill-item">
