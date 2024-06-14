@@ -8,17 +8,17 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        const userName = form.current.user_name.value.trim();
-        const userEmail = form.current.user_email.value.trim();
+        const fromName = form.current.from_name.value.trim();
+        const fromEmail = form.current.from_email.value.trim();
         const message = form.current.message.value.trim();
 
-        if (!userName || !userEmail || !message) {
+        if (!fromName || !fromEmail || !message) {
             alert("Please fill in all fields before submitting.");
             return;
         }
 
         emailjs
-            .sendForm('service_xf6tq0j', 'template_rz6b6u7', form.current, 'ItdLRQ-QUuWjP1SWA1axp')
+            .sendForm('service_318vlhn', 'template_rz6b6u7', form.current, 'kPP3-fJhMztH7vrOz')
             .then(
                 (result) => {
                     console.log('SUCCESS!', result.text);
@@ -37,8 +37,8 @@ const Contact = () => {
             <h1 className="contactPageTitle">Contact Me</h1>
             <span className="contactDesc">Please fill out the form below if you are interested in a collaboration.</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
-                <input type="text" className='name' placeholder='Enter your name' name="user_name" />
-                <input type="text" className='email' placeholder='Enter your email' name="user_email" />
+                <input type="text" className='name' placeholder='Enter your name' name="from_name" />
+                <input type="text" className='email' placeholder='Enter your email' name="from_email" />
                 <textarea className='msg' name="message" rows="5" placeholder='Your message'></textarea>
                 <button type='submit' className='submitBtn'>Submit</button>
             </form>
