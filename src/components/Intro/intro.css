@@ -124,4 +124,11 @@
         font-size: 4vh;
         padding: 1.5rem;
     }
+
+    .circle {
+        top: 10px;
+        left: 8rem;
+        width: 16.5rem;
+        height: 18rem;
+    }
 }
