@@ -167,6 +167,13 @@
 
 @media screen and (max-width: 480px) {
     .circle {
-        left: 6rem;
+        left: 5rem;
+        width: 14rem;
+        height: 16rem;
+    }
+
+    .introContent {
+        font-size: 1.5rem;
+        font-weight: 500;
     }
 }
