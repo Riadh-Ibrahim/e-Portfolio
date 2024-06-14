@@ -104,12 +104,31 @@
 
 @media screen and (max-width: 840px) {
     .circle {
-        right: -10vh;
+        right: -20vh;
     }
 
     .introContent {
-        font-size: 5vh;
-        padding: 2rem;
+        font-size: 4vh;
+        padding: 1.5rem;
+    }
+
+    .circle {
+        top: 10px;
+        left: 12rem;
+        width: 16.5rem;
+        height: 18rem;
+    }
+
+    .introContent {
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        top: 20rem;
+        left: 2rem;
+        position: relative;
+        z-index: 1;
     }
 
     .hello {
