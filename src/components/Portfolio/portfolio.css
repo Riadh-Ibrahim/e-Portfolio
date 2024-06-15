@@ -60,3 +60,16 @@
 .more-details:hover {
     color: #601cfc;
 }
+
+@media screen and (max-width: 680px) {
+    .project-card{
+        width: 25rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .project-card{
+        width: 22rem;
+    }
+}

@@ -63,7 +63,6 @@
     font-size: 1.5em;
     color: #333333d1;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 .info p {
@@ -97,5 +96,9 @@
     .content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .info p {
+        font-size: 1rem;
     }
 }

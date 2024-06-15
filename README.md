@@ -18,7 +18,3 @@ I created my portfolio website using React.js. Here's an overview of the user-si
 
 
 ![Screenshot 2024-06-12 195031](https://github.com/Riadh-Ibrahim/My-Portfolio-website/assets/110717872/0b604dc9-8bf5-41f5-bb14-bbeae8067ee6)
-<<<<<<< HEAD
-=======
-
->>>>>>> db00c55b4d31e37f0827d73f40d8a8a85bf5a2e1
