@@ -23,11 +23,11 @@ const Navbar = () => {
             
             <i className="fas fa-bars fa-2x mobMenu" onClick={() => setShowMenu(!showMenu)}></i>
             <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
-                <Link to='intro' spy={true} smooth={true} offset={-100} duration={50} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
+                <Link to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
                 <Link to='services' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>About</Link>
                 <Link to='skills' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Skills</Link>
                 <Link to='projects' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Portfolio</Link>
-                <Link to='contact' spy={true} smooth={true} offset={-50} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Contact</Link>
+                <Link to='contact' spy={true} smooth={true} offset={-50} duration={600} className="listItem" onClick={() => setShowMenu(false)}>Contact</Link>
             </div>
         </nav>
     );
