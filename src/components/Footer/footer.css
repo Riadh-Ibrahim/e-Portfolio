@@ -31,3 +31,33 @@
 .social-icons a:hover {
     opacity: 0.8;
 }
+
+@media screen and (max-width: 680px) {
+    .social-icons {
+        gap: 2rem; 
+    }
+    
+    .social-icons a {
+        font-size: 1.8em;
+    }
+
+    .footer-title {
+        font-size: 1.2em;
+        font-weight: 550;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .social-icons {
+        gap: 1.5rem; 
+    }
+    
+    .social-icons a {
+        font-size: 1.5em;
+    }
+
+    .footer-title {
+        font-size: 1.1em;
+        font-weight: 450;
+    }
+}
