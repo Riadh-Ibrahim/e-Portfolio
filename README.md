@@ -5,16 +5,22 @@ https://riadhibrahim-riadhs-projects-02d316c4.vercel.app/
 I created my portfolio website using React.js. Here's an overview of the user-side pages :
 
 
-![Screenshot 2024-06-12 194933 - Copy](https://github.com/Riadh-Ibrahim/My-Portfolio-website/assets/110717872/02092c43-a7b5-4cb5-8f18-bfb31a9085a6)
+
+![Screenshot 2024-06-14 211702](https://github.com/Riadh-Ibrahim/e-Portfolio/assets/110717872/943e88d3-efb1-4be2-ae70-d8f180790138)
 
 
-![Screenshot 2024-06-12 194946](https://github.com/Riadh-Ibrahim/My-Portfolio-website/assets/110717872/7fc00cd7-220c-4073-b486-100e701bbf22)
+![Screenshot 2024-06-14 211713](https://github.com/Riadh-Ibrahim/e-Portfolio/assets/110717872/43f94786-2a6b-45b0-a079-40681e799c7d)
 
 
-![Screenshot 2024-06-12 195010](https://github.com/Riadh-Ibrahim/My-Portfolio-website/assets/110717872/110f5ade-2a29-40d0-a034-52c5f6560c51)
+![Screenshot 2024-06-14 211722](https://github.com/Riadh-Ibrahim/e-Portfolio/assets/110717872/de225887-342e-42e5-9ba5-2626c910f3fd)
 
 
-![Screenshot 2024-06-12 195021](https://github.com/Riadh-Ibrahim/My-Portfolio-website/assets/110717872/d6e79faf-3d67-459c-a0e0-ff90ee06de59)
+![Screenshot 2024-06-14 211731](https://github.com/Riadh-Ibrahim/e-Portfolio/assets/110717872/65d7ed11-3eff-4487-8d71-c986c77dcecc)
 
 
+<<<<<<< HEAD
 ![Screenshot 2024-06-12 195031](https://github.com/Riadh-Ibrahim/My-Portfolio-website/assets/110717872/0b604dc9-8bf5-41f5-bb14-bbeae8067ee6)
+=======
+
+![Screenshot 2024-06-14 211741](https://github.com/Riadh-Ibrahim/e-Portfolio/assets/110717872/c321fa13-50e5-403f-a170-ceff41a229f0)
+>>>>>>> 993867102b35288354751dfa2b7ef9c578ec63bd

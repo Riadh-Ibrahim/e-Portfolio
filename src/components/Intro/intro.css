@@ -1,6 +1,10 @@
 .introContent {
     height: 100vh;
+<<<<<<< HEAD
     width: 100vw; /* Changed to 100vw for better responsiveness */
+=======
+    width: 100vh;
+>>>>>>> 993867102b35288354751dfa2b7ef9c578ec63bd
     padding: 1rem;
     font-size: 3rem;
     font-weight: 700;
@@ -104,6 +108,28 @@
 @media screen and (max-width: 840px) {
     .circle {
         right: -20vh;
+<<<<<<< HEAD
+        top: 10px;
+        left: 12rem;
+        width: 16.5rem;
+        height: 18rem;
+=======
+>>>>>>> 993867102b35288354751dfa2b7ef9c578ec63bd
+    }
+
+    .introContent {
+        font-size: 4vh;
+        padding: 1.5rem;
+<<<<<<< HEAD
+        height: auto;
+        width: auto;
+        font-weight: 600;
+        top: 20rem;
+        left: 2rem;
+=======
+    }
+
+    .circle {
         top: 10px;
         left: 12rem;
         width: 16.5rem;
@@ -111,13 +137,16 @@
     }
 
     .introContent {
-        font-size: 4vh;
-        padding: 1.5rem;
         height: auto;
         width: auto;
+        padding: 1rem;
+        font-size: 2rem;
         font-weight: 600;
         top: 20rem;
         left: 2rem;
+        position: relative;
+        z-index: 1;
+>>>>>>> 993867102b35288354751dfa2b7ef9c578ec63bd
     }
 
     .hello {
@@ -142,6 +171,37 @@
         font-size: 2rem;
         font-weight: 600;
         top: 20rem;
+    }
+
+    .circle {
+        top: 10px;
+        left: 8rem;
+        width: 16.5rem;
+        height: 18rem;
+    }
+
+    .introContent {
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        top: 20rem;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .circle {
+        left: 5rem;
+        width: 14rem;
+        height: 16rem;
+    }
+
+    .introContent {
+        font-size: 1.5rem;
+        font-weight: 500;
     }
 }
 
