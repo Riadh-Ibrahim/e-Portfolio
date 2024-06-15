@@ -198,7 +198,7 @@
 
 @media screen and (max-width: 480px) {
     .circle {
-        left: 6rem;
+        left: 4rem;
         height: 15rem;
     }
 }
