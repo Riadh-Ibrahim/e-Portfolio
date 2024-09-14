@@ -3,15 +3,28 @@ import './portfolio.css';
 import kyufiImg from '../../assets/kyufi.png'
 import entreprenetImg from '../../assets/entreprenet.png'
 import todoImg from '../../assets/todo.png'
-import hiddenImg from '../../assets/number.png'
+import eveboookImg from '../../assets/evebook.png'
 
 
 const Portfolio = () => {
     return (
         <section class="projects" id="projects">
                 <h2 class="title">Projects :</h2>
+                <p className="skills-subtitle">Here are some of the projects I have worked on, showcasing various skills and technologies.</p>
                 <div class="content">
-                    <div class="project-card">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src={eveboookImg} alt=''/>
+                    </div>
+                        <div class="project-info">
+                            <p class="project-category">A module that enables users to reserve <b>EVE-NG</b> virtual machines and receive secure access details seamlessly.</p>
+                            <strong class="project-title">
+                                <span><h3>EVE-BOOK</h3></span>
+                                <a href="https://github.com/Riadh-Ibrahim/EVE-Book" class="more-details">View More</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card" id='entreprenet'>
                         <div class="project-image">
                             <img src={entreprenetImg} alt='' />
                         </div>
@@ -44,18 +57,6 @@ const Portfolio = () => {
                             <strong class="project-title">
                                 <span><h3>TODO List</h3></span>
                                 <a href="https://github.com/Riadh-Ibrahim/Todo-List" class="more-details">View More</a>
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                    <div class="project-image">
-                        <img src={hiddenImg} alt=''/>
-                    </div>
-                        <div class="project-info">
-                            <p class="project-category">A web page that simulates the game of <b>Hiddem Number</b> using HTML, CSS & JavaScript</p>
-                            <strong class="project-title">
-                                <span><h3>Hidden Number</h3></span>
-                                <a href="https://github.com/Riadh-Ibrahim/Jeu-du-chiffre-cach-" class="more-details">View More</a>
                             </strong>
                         </div>
                     </div>
