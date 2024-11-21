@@ -2,7 +2,7 @@ import React from 'react';
 import './portfolio.css';
 import kyufiImg from '../../assets/kyufi.png'
 import entreprenetImg from '../../assets/entreprenet.png'
-import todoImg from '../../assets/todo.png'
+import schoolImg from '../../assets/school.png'
 import eveboookImg from '../../assets/evebook.png'
 
 
@@ -21,6 +21,18 @@ const Portfolio = () => {
                             <strong class="project-title">
                                 <span><h3>EVE-BOOK</h3></span>
                                 <a href="https://github.com/Riadh-Ibrahim/EVE-Book" class="more-details">View More</a>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src={schoolImg} alt=''/>
+                        </div>
+                        <div class="project-info">
+                            <p class="project-category">A scalable ERP system designed to streamline school operations. It offers features for student, teacher, and administrative management workflows.</p>
+                            <strong class="project-title">
+                                <span><h3>InstaSchooler</h3></span>
+                                <a href="https://github.com/Riadh-Ibrahim/InstaSchooler" class="more-details">View More</a>
                             </strong>
                         </div>
                     </div>
@@ -45,18 +57,6 @@ const Portfolio = () => {
                             <strong class="project-title">
                                 <span><b><h3>Kyufi Coffee Shop</h3></b></span>
                                 <a href="https://github.com/Riadh-Ibrahim/Coffee-Shop-Website" class="more-details">View More</a>
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src={todoImg} alt=''/>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">A <b>Todo List</b> page using HTML, CSS & JavaScript</p>
-                            <strong class="project-title">
-                                <span><h3>TODO List</h3></span>
-                                <a href="https://github.com/Riadh-Ibrahim/Todo-List" class="more-details">View More</a>
                             </strong>
                         </div>
                     </div>
