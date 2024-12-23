@@ -2,9 +2,8 @@ import React from 'react';
 import './portfolio.css';
 import kyufiImg from '../../assets/kyufi.png'
 import entreprenetImg from '../../assets/entreprenet.png'
-import schoolImg from '../../assets/school.png'
+import schoolImg from '../../assets/erp.png'
 import eveboookImg from '../../assets/evebook.png'
-
 
 const Portfolio = () => {
     return (
