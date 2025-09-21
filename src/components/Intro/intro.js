@@ -26,16 +26,16 @@ const Intro = () => {
                 <span className="hello">Hello,</span>
                 <span className="introText">
                     I am <span className={`introName ${animationClass}`}>{name}</span><br />
-                    Web developer
+                    AI Developer & Cloud Architect
                 </span>
                 <p className="introPara">
-                    I am a full-stack junior web developer with <br />
-                    experience in building user-friendly web applications
+                    AWS Certified AI Developer specializing in machine learning, <br />
+                    generative AI, and scalable cloud solutions
                 </p>
                 <Link to='contact'>
                     <button className="btn">
                         <img src={btnImg} alt="Hire Me" className='btnImg' />
-                        Let's work together!
+                        Let's collaborate!
                     </button>
                 </Link>
             </div>

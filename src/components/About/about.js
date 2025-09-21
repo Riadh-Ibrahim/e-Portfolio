@@ -7,16 +7,16 @@ import cvFile from '../../assets/cv.pdf';
 const About = () => {
   return (
     <section className="cards" id="services">
-      <h2 className="title">About :</h2>
+      <h2 className="title">About</h2>
       <div className="content">
         <div className="card">
           <div className="icon">
             <FontAwesomeIcon icon={faUser} className="icon-style" />
           </div>
           <div className="info">
-            <h3>Personal Information</h3>
+            <h3>Professional Background</h3>
             <br/>
-            <p>Hi, I am Riadh Ibrahim; Tunisian 22 years old student and full-stack web developer. I've dabbled in various programming languages and frameworks, constantly seeking to expand my skills and knowledge. I find joy in crafting digital experiences and solving problems through code.</p>
+            <p>I am Riadh Ibrahim, a 24-year-old AI Developer at Calgra Group (Edinburgh, UK) and Computer Networks & Telecommunications Engineering student at INSAT. I specialize in AI/ML solutions, cloud architecture, and have extensive experience with AWS certified technologies.</p>
           </div>
         </div>
         <div className="card">
@@ -24,9 +24,9 @@ const About = () => {
             <FontAwesomeIcon icon={faGraduationCap} className="icon-style" />
           </div>
           <div className="info">
-            <h3>Educational Path</h3>
+            <h3>Education & Certifications</h3>
             <br/>
-            <p>I graduated Tunisian high school in 2021 and got my baccalaureate diploma with the highest honor. Currently, I am a third year computer networks and telecommunications engineering student at the National Institute of Applied Sciences and Technology (INSAT).</p>
+            <p>Currently pursuing Computer Networks and Telecommunications Engineering at INSAT (2021-2026). Achieved Baccalaureate with 18.29/20. AWS Certified Machine Learning Engineer Associate, Solutions Architect Associate, and multiple NVIDIA certifications in AI/ML.</p>
           </div>
         </div>
         <div className="card">
@@ -36,7 +36,7 @@ const About = () => {
           <div className="info">
             <h3>Curriculum Vitae</h3>
             <br/>
-            <p>Feel free to access my CV by clicking the button below.</p>
+            <p>Download my comprehensive CV to learn about my professional experience, research publications, AWS certifications, and technical expertise in AI/ML and cloud technologies.</p>
             <br/>
             <a href={cvFile} download className="download-button">
               Download CV <FontAwesomeIcon icon={faFileDownload} />

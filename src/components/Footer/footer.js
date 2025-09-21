@@ -2,14 +2,78 @@ import React from 'react';
 import './footer.css';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+    
     return (
-        <footer className="footer">
-            <p class="footer-title"><i class="fas fa-copyright"></i><span> : Riadh Ibrahim</span></p>
-            <div class="social-icons">
-                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Friadh-ibrahim-850712240%3Ffbclid%3DIwAR2L9ct7eQMMKRY0D91bLVO1hkVpEjnOusx0DLbzu81DIJ_5hVmhZMMJ-yM&h=AT1j1Yp5-zAI4S2_93A8UXEJEuEXJI6ZzZKHDMtYPtkhcnk-n7qCB0W6Gj5GLquvzhFteBwWXdi50YtKZW0zT-dFGFJFC22geDs1R_8vZ43msL8tTL9SCz-FLtP-8X4TL9NTig"><i class="fab fa-linkedin"></i></a>
-                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FRiadh-Ibrahim%3Ffbclid%3DIwAR3xownEoOH9AcmEEtvFHNpq5jkTLvpGyXgPolVHwvyAQmBax_mPc1Ts4jg&h=AT1j1Yp5-zAI4S2_93A8UXEJEuEXJI6ZzZKHDMtYPtkhcnk-n7qCB0W6Gj5GLquvzhFteBwWXdi50YtKZW0zT-dFGFJFC22geDs1R_8vZ43msL8tTL9SCz-FLtP-8X4TL9NTig"><i class="fab fa-github"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100009773322102"><i class="fab fa-facebook"></i></a>
-                <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Finstagram.com%2Fibrahim.riyad_02%3Ffbclid%3DIwAR2L9ct7eQMMKRY0D91bLVO1hkVpEjnOusx0DLbzu81DIJ_5hVmhZMMJ-yM&h=AT1j1Yp5-zAI4S2_93A8UXEJEuEXJI6ZzZKHDMtYPtkhcnk-n7qCB0W6Gj5GLquvzhFteBwWXdi50YtKZW0zT-dFGFJFC22geDs1R_8vZ43msL8tTL9SCz-FLtP-8X4TL9NTig"><i class="fab fa-instagram"></i></a>
+        <footer className="footer" role="contentinfo">
+            <div className="footer-content">
+                <div className="footer-section">
+                    <div className="footer-brand">
+                        <h3>Riadh Ibrahim</h3>
+                        <p>AI Developer & Engineer</p>
+                        <div className="footer-badges">
+                            <span className="badge">AWS Certified</span>
+                            <span className="badge">ML Engineer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="footer-section">
+                    <h4>Quick Links</h4>
+                    <nav className="footer-nav">
+                        <a href="#intro">Home</a>
+                        <a href="#services">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                
+                <div className="footer-section">
+                    <h4>Professional</h4>
+                    <div className="footer-links">
+                        <a href="mailto:riadh.ibrahim@insat.ucar.tn" target="_blank" rel="noopener noreferrer">
+                            <i className="fas fa-envelope"></i> Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/riadh-ibrahim-850712240/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/Riadh-Ibrahim" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.credly.com/users/riadh-ibrahim.c8f5e4b4" target="_blank" rel="noopener noreferrer">
+                            <i className="fas fa-certificate"></i> Certifications
+                        </a>
+                    </div>
+                </div>
+                
+                <div className="footer-section">
+                    <h4>Connect</h4>
+                    <div className="social-icons">
+                        <a href="https://www.linkedin.com/in/riadh-ibrahim-850712240/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Riadh-Ibrahim" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009773322102" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-facebook"></i>
+                        </a>
+                        <a href="http://instagram.com/ibrahim.riyad_02" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div className="footer-bottom">
+                <div className="footer-bottom-content">
+                    <p>&copy; {currentYear} Riadh Ibrahim. All rights reserved.</p>
+                    <p className="footer-location">
+                        <i className="fas fa-map-marker-alt"></i>
+                        Tunis, Tunisia
+                    </p>
+                </div>
             </div>
         </footer>
     );

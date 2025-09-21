@@ -6,33 +6,54 @@ import {
     faCss3Alt, 
     faJs, 
     faReact, 
-    faBootstrap, 
     faNodeJs, 
-    faPhp 
+    faPython,
+    faDocker,
+    faAws
 } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { 
+    faDatabase, 
+    faBrain, 
+    faCloud, 
+    faChartLine, 
+    faCog, 
+    faServer,
+    faCode,
+    faRobot
+} from '@fortawesome/free-solid-svg-icons';
 
 const skillsData = [
     {
-        category: 'Frontend Development',
+        category: 'AI & Machine Learning',
         skills: [
-            { name: 'HTML', level: 'Advanced', icon: faHtml5 },
-            { name: 'CSS', level: 'Advanced', icon: faCss3Alt },
-            { name: 'JavaScript', level: 'Intermediate', icon: faJs },
-            { name: 'Tailwind', level: 'Intermediate', icon: faCss3Alt },
-            { name: 'BootStrap', level: 'Intermediate', icon: faBootstrap },
-            { name: 'React', level: 'Intermediate', icon: faReact },
+            { name: 'LangGraph & LangChain', level: 'Advanced', icon: faBrain },
+            { name: 'PyTorch & TensorFlow', level: 'Advanced', icon: faRobot },
+            { name: 'ChromaDB & YOLO', level: 'Advanced', icon: faBrain },
+            { name: 'Pandas & NumPy', level: 'Advanced', icon: faChartLine },
+            { name: 'Scikit-learn & LSTM', level: 'Advanced', icon: faRobot },
+            { name: 'CRISP-DM Methodology', level: 'Intermediate', icon: faCog },
         ],
     },
     {
-        category: 'Backend Development',
+        category: 'Web Development',
         skills: [
-            { name: 'MySQL', level: 'Intermediate', icon: faDatabase },
-            { name: 'Node Js', level: 'Advanced', icon: faNodeJs },
-            { name: 'Express Js', level: 'Advanced', icon: faNodeJs },
-            { name: 'MongoDB', level: 'Intermediate', icon: faDatabase },
-            { name: 'Python', level: 'Intermediate', icon: faDatabase },
-            { name: 'PHP', level: 'Basic', icon: faPhp },
+            { name: 'JavaScript/TypeScript', level: 'Advanced', icon: faJs },
+            { name: 'React & Next.js', level: 'Advanced', icon: faReact },
+            { name: 'Node.js & Express.js', level: 'Advanced', icon: faNodeJs },
+            { name: 'NestJS Framework', level: 'Intermediate', icon: faNodeJs },
+            { name: 'HTML & CSS', level: 'Advanced', icon: faHtml5 },
+            { name: 'MySQL & PostgreSQL', level: 'Advanced', icon: faDatabase },
+        ],
+    },
+    {
+        category: 'Cloud & DevOps',
+        skills: [
+            { name: 'AWS (Certified)', level: 'Advanced', icon: faAws },
+            { name: 'Docker & Kubernetes', level: 'Advanced', icon: faDocker },
+            { name: 'Jenkins & GitHub Actions', level: 'Intermediate', icon: faCog },
+            { name: 'Grafana & Prometheus', level: 'Intermediate', icon: faChartLine },
+            { name: 'InfluxDB & Telegraf', level: 'Intermediate', icon: faDatabase },
+            { name: 'MongoDB Database', level: 'Advanced', icon: faDatabase },
         ],
     },
 ];
@@ -40,8 +61,8 @@ const skillsData = [
 const Skills = () => {
     return (
         <div className="skills-container" id='skills'>
-            <h2 className="skills-title">Skills</h2>
-            <p className="skills-subtitle">Skill Set and Competency</p>
+            <h2 className="skills-title">Technical Expertise</h2>
+            <p className="skills-subtitle">Professional competencies spanning AI/ML, Cloud Architecture, and Full-Stack Development</p>
             <div className="skills-content">
                 {skillsData.map((category, index) => (
                     <div key={index} className="skills-category-box">

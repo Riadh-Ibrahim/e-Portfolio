@@ -1,65 +1,80 @@
 import React from 'react';
 import './portfolio.css';
-import kyufiImg from '../../assets/kyufi.png'
+import kyufiImg from '../../assets/kyufi.gif'
 import entreprenetImg from '../../assets/entreprenet.png'
 import schoolImg from '../../assets/erp.png'
 import eveboookImg from '../../assets/evebook.png'
 
 const Portfolio = () => {
     return (
-        <section class="projects" id="projects">
-                <h2 class="title">Projects :</h2>
-                <p className="skills-subtitle">Here are some of the projects I have worked on, showcasing various skills and technologies.</p>
-                <div class="content">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src={eveboookImg} alt=''/>
+        <section className="projects" id="projects">
+            <h2 className="title">Featured Projects</h2>
+            <p className="skills-subtitle">AI/ML research, cloud architecture, and enterprise solutions showcasing professional expertise</p>
+            <div className="content">                
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src={schoolImg} alt='EcoLens AI Platform'/>
                     </div>
-                        <div class="project-info">
-                            <p class="project-category">A module that enables users to reserve <b>EVE-NG</b> virtual machines and receive secure access details seamlessly.</p>
-                            <strong class="project-title">
-                                <span><h3>EVE-BOOK</h3></span>
-                                <a href="https://github.com/Riadh-Ibrahim/EVE-Book" class="more-details">View More</a>
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src={schoolImg} alt=''/>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">A scalable ERP system designed to streamline school operations. It offers features for student, teacher, and administrative management workflows.</p>
-                            <strong class="project-title">
-                                <span><h3>InstaSchooler</h3></span>
-                                <a href="https://github.com/Riadh-Ibrahim/InstaSchooler" class="more-details">View More</a>
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="project-card" id='entreprenet'>
-                        <div class="project-image">
-                            <img src={entreprenetImg} alt='' />
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">A platform buit with MERN stack that allows investors to connect with entrepreneurs in a dynamic environment</p>
-                            <strong class="project-title">
-                                <span><h3>EntrepreNet</h3></span>
-                                <a href="https://github.com/Riadh-Ibrahim/Entreprenet" class="more-details">View More</a>
-                            </strong>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src={kyufiImg} alt=''/>
-                        </div>
-                        <div class="project-info">
-                            <p class="project-category">An <b>e-commerce</b> web application designed for a <b>Coffee Shop</b>, facilitating customers to place orders seamlessly, built with HTML, CSS, JavaScript, PHP, and MySQL.</p>
-                            <strong class="project-title">
-                                <span><b><h3>Kyufi Coffee Shop</h3></b></span>
-                                <a href="https://github.com/Riadh-Ibrahim/Coffee-Shop-Website" class="more-details">View More</a>
-                            </strong>
-                        </div>
+                    <div className="project-info">
+                        <p className="project-category">
+                            <strong>EcoLens - AI Content Generator</strong><br/>
+                            AI-powered platform for generating text, images, and videos using <span className="project-tech-tag">Gemini</span> <span className="project-tech-tag">Hugging Face</span> <span className="project-tech-tag">Flux Dev</span> with automated LinkedIn sharing capabilities.
+                        </p>
+                        <strong className="project-title">
+                            <h3>AI Content Platform (2025)</h3>
+                            <a href="https://github.com/Riadh-Ibrahim/EcoLens" className="more-details">View Project</a>
+                        </strong>
                     </div>
                 </div>
+
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src={eveboookImg} alt='Enhanced RouteNet Research'/>
+                    </div>
+                    <div className="project-info">
+                        <p className="project-category">
+                            <strong>Enhanced RouteNet with Attention Layer</strong><br/>
+                            Research project improving network performance prediction using attention mechanisms. <span className="project-tech-tag">PyTorch</span> <span className="project-tech-tag">TensorFlow</span> <span className="project-tech-tag">Optuna</span> <strong>Published Research Paper</strong> with significant accuracy improvements.
+                        </p>
+                        <strong className="project-title">
+                            <h3>AI Research (2025)</h3>
+                            <a href="https://github.com/Riadh-Ibrahim/Enhanced-Routenet-Model-with-Attention-Layer" className="more-details">View Research</a>
+                        </strong>
+                    </div>
+                </div>
+                
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src={entreprenetImg} alt='Serverless AWS Architecture'/>
+                    </div>
+                    <div className="project-info">
+                        <p className="project-category">
+                            <strong>Serverless REST API with AWS</strong><br/>
+                            Production-ready serverless To-Do application using <span className="project-tech-tag">Lambda</span> <span className="project-tech-tag">API Gateway</span> <span className="project-tech-tag">DynamoDB</span> <span className="project-tech-tag">CloudFront</span> <span className="project-tech-tag">Cognito</span> for scalable cloud architecture.
+                        </p>
+                        <strong className="project-title">
+                            <h3>Cloud Architecture (2024)</h3>
+                            <a href="https://github.com/Riadh-Ibrahim/Serverless-REST-API-with-DynamoDB-and-API-Gateway" className="more-details">View Project</a>
+                        </strong>
+                    </div>
+                </div>
+                
+                <div className="project-card">
+                    <div className="project-image">
+                        <img src={kyufiImg} alt='Healthcare Management System'/>
+                    </div>
+                    <div className="project-info">
+                        <p className="project-category">
+                            <strong>Nafis Healthcare Management System</strong><br/>
+                            Comprehensive healthcare platform streamlining hospital operations with appointment scheduling, patient records, and role-based access. <span className="project-tech-tag">React</span> <span className="project-tech-tag">Node.js</span> <span className="project-tech-tag">MongoDB</span>
+                        </p>
+                        <strong className="project-title">
+                            <h3>Healthcare Solution (2024)</h3>
+                            <a href="https://github.com/Riadh-Ibrahim/Nafis-Healthcare-Management-System" className="more-details">View Project</a>
+                        </strong>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };

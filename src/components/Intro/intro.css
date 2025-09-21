@@ -83,6 +83,10 @@
     letter-spacing: 1px;
 }
 
+.introText {
+    font-size: 2.8rem;
+}
+
 .btn {
     background: white;
     margin: 1rem 0;
