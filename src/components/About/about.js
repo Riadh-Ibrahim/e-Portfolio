@@ -16,7 +16,7 @@ const About = () => {
           <div className="info">
             <h3>Professional Background</h3>
             <br/>
-            <p>I am Riadh Ibrahim, a 24-year-old AI Developer at Calgra Group (Edinburgh, UK) and Computer Networks & Telecommunications Engineering student at INSAT. I specialize in AI/ML solutions, cloud architecture, and have extensive experience with AWS certified technologies.</p>
+            <p>I am Riadh Ibrahim, a 23-year-old AI Developer at Calgra Group (Edinburgh, UK) and Computer Networks & Telecommunications Engineering student at INSAT. I specialize in AI/ML solutions, cloud architecture, and have extensive experience with AWS certified technologies.</p>
           </div>
         </div>
         <div className="card">
