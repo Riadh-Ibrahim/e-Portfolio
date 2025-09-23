@@ -1,104 +1,401 @@
 .cards {
-    background-color: black;
-    padding: 60px 20px;
+    background: var(--bg-secondary);
+    padding: 100px 40px;
     text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse at 30% 40%, var(--ambient-glow) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(230, 126, 34, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    animation: ambientMove 15s ease-in-out infinite;
+}
+
+@keyframes ambientMove {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.7; }
 }
 
 .title {
-    font-size: 2.5em;
+    font-size: 3.8em;
     color: #f39c12;
-    margin-bottom: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
     position: relative;
+    background: linear-gradient(135deg, #f39c12, #e67e22, #f39c12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(243, 156, 18, 0.4);
+    opacity: 0;
+    animation: titleSlideIn 1s ease 0.2s forwards;
+}
+
+@keyframes titleSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .title::after {
     content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    margin: 0.5rem auto;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #f39c12, #e67e22, #f39c12);
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+    animation: underlineExpand 1s ease 0.8s forwards;
+    opacity: 0;
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 120px;
+        opacity: 1;
+    }
 }
 
 .content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    position: relative;
 }
 
 .card {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--bg-card);
+    border-radius: 25px;
+    border: 1px solid var(--border-color);
+    box-shadow: 
+        0 25px 50px var(--shadow-secondary),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
     overflow: hidden;
-    width: 23rem;
-    height: 32rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 420px;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: cardSlideUp 0.8s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.3s; }
+.card:nth-child(2) { animation-delay: 0.5s; }
+.card:nth-child(3) { animation-delay: 0.7s; }
+
+@keyframes cardSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(243, 156, 18, 0.1), 
+        transparent
+    );
+    transition: left 0.8s ease;
+}
+
+.card:hover::before {
+    left: 100%;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 
+        0 35px 70px rgba(0, 0, 0, 0.5),
+        0 0 40px rgba(243, 156, 18, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-color: rgba(243, 156, 18, 0.5);
 }
 
 .icon {
-    background-color: #f39c12;
-    padding: 20px;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(255, 255, 255, 0.2), 
+        transparent 50%, 
+        rgba(255, 255, 255, 0.1)
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .icon::before {
+    opacity: 1;
 }
 
 .icon-style {
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: white;
+    transition: all 0.4s ease;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover .icon-style {
+    transform: scale(1.1) rotate(5deg);
+    filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.5));
 }
 
 .info {
-    padding: 20px;
-    text-align: center;
+    padding: 35px 30px;
+    text-align: left;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 140px);
 }
 
 .info h3 {
-    font-size: 1.5em;
-    color: #333333d1;
-    margin-bottom: 10px;
+    font-size: 1.6em;
+    color: var(--accent-primary);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 0 0 15px rgba(243, 156, 18, 0.3);
+    position: relative;
+}
+
+.info h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+    border-radius: 2px;
+    transition: width 0.6s ease;
+}
+
+.card:hover .info h3::after {
+    width: 60px;
 }
 
 .info p {
-    color: #666;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    padding: 10px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    font-weight: 400;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
 }
 
 .download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    background-color: #f39c12;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
     color: white;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(243, 156, 18, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(120deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.3), 
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.8s ease;
+}
+
+.download-button:hover::before {
+    left: 120%;
 }
 
 .download-button:hover {
-    background-color: #e67e22;
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(243, 156, 18, 0.4);
+}
+
+.download-button i {
+    transition: transform 0.3s ease;
+}
+
+.download-button:hover i {
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
+    .cards {
+        padding: 80px 20px;
+    }
+    
+    .title {
+        font-size: 2.8em;
+    }
+    
+    .content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 50px;
     }
 
-    .content {
-        flex-direction: column;
-        align-items: center;
+    .card {
+        min-height: 380px;
+    }
+
+    .info {
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .info h3 {
+        font-size: 1.4em;
+    }
+
+    .info h3::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .info p {
         font-size: 1rem;
+    }
+    
+    .download-button {
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        padding: 60px 15px;
+    }
+    
+    .title {
+        font-size: 2.3em;
+    }
+    
+    .card {
+        min-height: 350px;
+    }
+    
+    .icon {
+        padding: 25px;
+    }
+    
+    .icon-style {
+        font-size: 3.5rem;
+    }
+    
+    .info {
+        padding: 20px 15px;
+    }
+    
+    .info p {
+        font-size: 0.95rem;
+    }
+    
+    .download-button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cards {
+        padding: 50px 10px;
+    }
+    
+    .title {
+        font-size: 2em;
+    }
+    
+    .card {
+        min-height: 320px;
+    }
+    
+    .info {
+        padding: 15px 12px;
+    }
+    
+    .info h3 {
+        font-size: 1.2em;
+    }
+    
+    .info p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .download-button {
+        padding: 10px 16px;
+        font-size: 0.85rem;
     }
 }

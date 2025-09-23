@@ -1,3 +1,35 @@
+:root {
+    /* Dark theme (default) */
+    --bg-primary: linear-gradient(135deg, #000000 0%, #0d1117 50%, #000000 100%);
+    --bg-secondary: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+    --bg-card: linear-gradient(145deg, #1a1a1a, #252525);
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-muted: #bdc3c7;
+    --accent-primary: #f39c12;
+    --accent-secondary: #e67e22;
+    --border-color: rgba(243, 156, 18, 0.2);
+    --shadow-primary: rgba(0, 0, 0, 0.3);
+    --shadow-secondary: rgba(0, 0, 0, 0.4);
+    --ambient-glow: rgba(243, 156, 18, 0.1);
+}
+
+[data-theme="light"] {
+    /* Light theme */
+    --bg-primary: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f8fafc 100%);
+    --bg-secondary: linear-gradient(135deg, #ffffff 0%, #f1f5f9 50%, #ffffff 100%);
+    --bg-card: linear-gradient(145deg, #ffffff, #f8fafc);
+    --text-primary: #1a202c;
+    --text-secondary: #2d3748;
+    --text-muted: #4a5568;
+    --accent-primary: #f39c12;
+    --accent-secondary: #e67e22;
+    --border-color: rgba(243, 156, 18, 0.3);
+    --shadow-primary: rgba(0, 0, 0, 0.1);
+    --shadow-secondary: rgba(0, 0, 0, 0.15);
+    --ambient-glow: rgba(243, 156, 18, 0.05);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +40,40 @@
 }
 
 body{
-    background: black;
+    background: linear-gradient(135deg, #000000 0%, #0d1117 50%, #000000 100%);
     color: white;
     overflow: hidden;
     overflow-y: scroll;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(13, 17, 23, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #f39c12, #e67e22);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #e67e22, #d35400);
+}
+
+/* Selection styling */
+::selection {
+    background: rgba(243, 156, 18, 0.3);
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: rgba(243, 156, 18, 0.3);
+    color: #ffffff;
 }

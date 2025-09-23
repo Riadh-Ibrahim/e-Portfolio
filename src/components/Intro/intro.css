@@ -116,27 +116,10 @@
     }
 
     .introContent {
-        font-size: 4vh;
+        font-size: 2rem;
         padding: 1.5rem;
         height: auto;
         width: auto;
-        font-weight: 600;
-        top: 20rem;
-        left: 2rem;
-    }
-
-    .circle {
-        top: 10px;
-        left: 12rem;
-        width: 16.5rem;
-        height: 18rem;
-    }
-
-    .introContent {
-        height: auto;
-        width: auto;
-        padding: 1rem;
-        font-size: 2rem;
         font-weight: 600;
         top: 20rem;
         left: 2rem;
@@ -147,11 +130,14 @@
     .hello {
         font-size: 3.5vw;
     }
+    
+    .introText {
+        font-size: 2.2rem;
+    }
 }
 
 @media screen and (max-width: 680px) {
     .circle {
-        right: -20vh;
         top: 10px;
         left: 8rem;
         width: 16.5rem;
@@ -159,31 +145,16 @@
     }
 
     .introContent {
-        font-size: 4vh;
-        padding: 1.5rem;
-        height: auto;
-        width: auto;
-        font-size: 2rem;
-        font-weight: 600;
-        top: 20rem;
-    }
-
-    .circle {
-        top: 10px;
-        left: 8rem;
-        width: 16.5rem;
-        height: 18rem;
-    }
-
-    .introContent {
-        height: auto;
-        width: auto;
         padding: 1rem;
         font-size: 2rem;
         font-weight: 600;
         top: 20rem;
         position: relative;
         z-index: 1;
+    }
+    
+    .introText {
+        font-size: 2rem;
     }
 }
 
@@ -197,12 +168,49 @@
     .introContent {
         font-size: 1.5rem;
         font-weight: 500;
+        padding: 0.5rem;
+    }
+    
+    .introText {
+        font-size: 1.8rem;
+    }
+    
+    .introPara {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
     .circle {
-        left: 4rem;
-        height: 15rem;
+        left: 3rem;
+        width: 12rem;
+        height: 13rem;
+    }
+
+    .introContent {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    
+    .hello {
+        font-size: 1.2rem;
+    }
+    
+    .introText {
+        font-size: 1.5rem;
+    }
+    
+    .introPara {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 10px 16px;
+        font-size: 0.85rem;
     }
 }

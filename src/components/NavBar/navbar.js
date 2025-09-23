@@ -6,6 +6,7 @@ const navLinks = [
   { to: 'intro', label: 'Home', offset: -100 },
   { to: 'services', label: 'About', offset: -50 },
   { to: 'skills', label: 'Skills', offset: -50 },
+  { to: 'experience', label: 'Experience', offset: -50 },
   { to: 'projects', label: 'Portfolio', offset: -50 },
   { to: 'contact', label: 'Contact', offset: -50 },
 ];
@@ -40,7 +41,7 @@ const Navbar = () => {
             
             {/* Desktop Menu */}
             <div className="desktopMenu">
-                {navLinks.slice(0,4).map(link => (
+                {navLinks.slice(0,5).map(link => (
                     <Link
                         key={link.to}
                         to={link.to}
