@@ -108,9 +108,10 @@
 
 @media screen and (max-width: 840px) {
     .circle {
-        right: -20vh;
-        top: 10px;
-        left: 12rem;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 2rem;
         width: 16.5rem;
         height: 18rem;
     }
@@ -121,10 +122,11 @@
         height: auto;
         width: auto;
         font-weight: 600;
-        top: 20rem;
-        left: 2rem;
+        top: 22rem;
+        left: auto;
         position: relative;
         z-index: 1;
+        text-align: center;
     }
 
     .hello {
@@ -138,19 +140,21 @@
 
 @media screen and (max-width: 680px) {
     .circle {
-        top: 10px;
-        left: 8rem;
-        width: 16.5rem;
-        height: 18rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1.5rem;
+        width: 15rem;
+        height: 16rem;
     }
 
     .introContent {
         padding: 1rem;
         font-size: 2rem;
         font-weight: 600;
-        top: 20rem;
+        top: 19rem;
         position: relative;
         z-index: 1;
+        text-align: center;
     }
     
     .introText {
@@ -160,7 +164,9 @@
 
 @media screen and (max-width: 480px) {
     .circle {
-        left: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 1rem;
         width: 14rem;
         height: 15rem;
     }
@@ -169,6 +175,8 @@
         font-size: 1.5rem;
         font-weight: 500;
         padding: 0.5rem;
+        top: 17rem;
+        text-align: center;
     }
     
     .introText {
@@ -187,7 +195,9 @@
 
 @media screen and (max-width: 360px) {
     .circle {
-        left: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0.5rem;
         width: 12rem;
         height: 13rem;
     }
@@ -195,6 +205,8 @@
     .introContent {
         font-size: 1.3rem;
         padding: 0.5rem;
+        top: 15rem;
+        text-align: center;
     }
     
     .hello {
